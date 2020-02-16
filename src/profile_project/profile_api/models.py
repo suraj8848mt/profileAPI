@@ -30,7 +30,7 @@ class UserProfileManager(BaseUserManager):
 
 
 
-class UserProfile(models.Model):
+class UserProfile(AbstractBaseUser, PermissionsMixin):
 	'''
 	Represents a user profile in our system
 	'''

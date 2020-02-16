@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'profile_project.wsgi.application'
+WSGI_APPLICATION = 'profile_project.wsgi.applicati on'
 
 
 # Database
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'profile_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db1.sqlite3'),
     }
 }
 
@@ -121,3 +121,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+AUTH_USER_MODEL = 'profile_api.UserProfile'
